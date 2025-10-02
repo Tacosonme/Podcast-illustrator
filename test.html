@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Illustrator Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        .section { margin: 20px 0; padding: 20px; border: 2px dashed #ddd; border-radius: 8px; }
+        .upload-area { text-align: center; padding: 40px; background: #f9f9f9; border-radius: 8px; }
+        input[type="file"] { margin: 10px 0; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        .result { margin-top: 20px; padding: 15px; border-radius: 5px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        .progress { width: 100%; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden; margin: 10px 0; }
+        .progress-bar { height: 100%; background: #007bff; transition: width 0.3s; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Podcast Illustrator Test</h1>
+        
+        <div class="section">
+            <h2>📁 Upload Podcast File</h2>
+            <div class="upload-area">
+                <input type="file" id="audioFile" accept="audio/*" />
+                <br>
+                <button onclick="uploadFile()" id="uploadBtn">Upload Podcast</button>
+            </div>
+            <div id="uploadResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>🔍 Check Processing Status</h2>
+            <input type="text" id="jobId" placeholder="Enter Job ID" style="width: 300px; padding: 8px; margin-right: 10px;">
+            <button onclick="checkStatus()">Check Status</button>
+            <div id="statusResult"></div>
+        </div>
+
+        <div class="section">
+            <h2>📊 API Health Check</h2>
+            <button onclick="healthCheck()">Test API Connection</button>
+            <div id="healthResult"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = window.location.origin + '/api';
+        
+        function showResult(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="result ${type}">${message}</div>`;
+        }
+
+        function showProgress(elementId, progress) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `
+                <div class="result info">
+                    <div>Processing... ${progress}%</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: ${progress}%"></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function uploadFile() {
+            const fileInput = document.getElementById('audioFile');
+            const uploadBtn = document.getElementById('uploadBtn');
+            
+            if (!fileInput.files[0]) {
+                showResult('uploadResult', 'Please select an audio file first.', 'error');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const fileSizeMB = (file.size / 1024 / 1024).toFixed(2);
+            
+            if (file.size > 200 * 1024 * 1024) {
+                showResult('uploadResult', `File too large (${fileSizeMB}MB). Maximum size is 200MB.`, 'error');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('audio', file);
+            
+            uploadBtn.disabled = true;
+            uploadBtn.textContent = 'Uploading...';
+            
+            try {
+                showResult('uploadResult', `Uploading ${file.name} (${fileSizeMB}MB)...`, 'info');
+                
+                const response = await fetch(`${API_BASE}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                let data;
+                const contentType = response.headers.get('content-type');
+                
+                if (contentType && contentType.includes('application/json')) {
+                    data = await response.json();
+                } else {
+                    // Handle non-JSON responses (like HTML error pages)
+                    const text = await response.text();
+                    throw new Error(`Server returned non-JSON response: ${text.substring(0, 200)}...`);
+                }
+                
+                if (response.ok) {
+                    showResult('uploadResult', `
+                        <strong>Upload Successful!</strong><br>
+                        Job ID: <code>${data.job_id}</code><br>
+                        Filename: ${data.filename}<br>
+                        File Size: ${(data.file_size / 1024 / 1024).toFixed(2)} MB<br>
+                        Duration: ${(data.duration / 60).toFixed(2)} minutes
+                    `, 'success');
+                    
+                    // Auto-fill job ID for status checking
+                    document.getElementById('jobId').value = data.job_id;
+                    
+                    // Start processing
+                    setTimeout(() => startProcessing(data.job_id), 1000);
+                } else {
+                    showResult('uploadResult', `Upload failed: ${data.error || data.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                console.error('Upload error:', error);
+                showResult('uploadResult', `Upload error: ${error.message}`, 'error');
+            } finally {
+                uploadBtn.disabled = false;
+                uploadBtn.textContent = 'Upload Podcast';
+            }
+        }
+
+        async function startProcessing(jobId) {
+            try {
+                const response = await fetch(`${API_BASE}/process/${jobId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        segment_duration: 600,
+                        generate_images: true,
+                        generate_videos: false
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('uploadResult', `
+                        <strong>Processing Started!</strong><br>
+                        Job ID: <code>${jobId}</code><br>
+                        Status: ${data.status}<br>
+                        <em>Check status below to monitor progress...</em>
+                    `, 'success');
+                    
+                    // Start monitoring
+                    monitorProgress(jobId);
+                } else {
+                    showResult('uploadResult', `Processing failed: ${data.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showResult('uploadResult', `Processing error: ${error.message}`, 'error');
+            }
+        }
+
+        async function checkStatus() {
+            const jobId = document.getElementById('jobId').value.trim();
+            
+            if (!jobId) {
+                showResult('statusResult', 'Please enter a Job ID.', 'error');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE}/status/${jobId}`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showResult('statusResult', `
+                        <strong>Status:</strong> ${data.status}<br>
+                        <strong>Progress:</strong> ${data.progress || 0}%<br>
+                        <strong>Message:</strong> ${data.message}<br>
+                        <strong>Timestamp:</strong> ${data.timestamp}
+                    `, 'success');
+                } else {
+                    showResult('statusResult', `Status check failed: ${data.message || 'Job not found'}`, 'error');
+                }
+            } catch (error) {
+                showResult('statusResult', `Status error: ${error.message}`, 'error');
+            }
+        }
+
+        async function monitorProgress(jobId) {
+            const checkProgress = async () => {
+                try {
+                    const response = await fetch(`${API_BASE}/status/${jobId}`);
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        const progress = data.progress || 0;
+                        showProgress('statusResult', progress);
+                        
+                        if (data.status === 'completed') {
+                            showResult('statusResult', `
+                                <strong>✅ Processing Complete!</strong><br>
+                                Job ID: <code>${jobId}</code><br>
+                                <a href="${API_BASE}/download/${jobId}" target="_blank">
+                                    <button>Download Video</button>
+                                </a>
+                            `, 'success');
+                        } else if (data.status === 'failed') {
+                            showResult('statusResult', `❌ Processing failed: ${data.message}`, 'error');
+                        } else if (data.status === 'processing') {
+                            setTimeout(checkProgress, 5000); // Check again in 5 seconds
+                        }
+                    }
+                } catch (error) {
+                    console.error('Progress monitoring error:', error);
+                }
+            };
+            
+            checkProgress();
+        }
+
+        async function healthCheck() {
+            try {
+                showResult('healthResult', 'Testing API connection...', 'info');
+                
+                const response = await fetch(`${API_BASE}/health`);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    showResult('healthResult', `
+                        <strong>✅ API is healthy!</strong><br>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `, 'success');
+                } else {
+                    showResult('healthResult', `❌ API health check failed (${response.status})`, 'error');
+                }
+            } catch (error) {
+                showResult('healthResult', `❌ API connection error: ${error.message}`, 'error');
+            }
+        }
+
+        // Auto health check on page load
+        window.onload = () => {
+            healthCheck();
+        };
+    </script>
+</body>
+</html>
+

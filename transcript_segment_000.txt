@@ -1,0 +1,140 @@
+[PROGRESS] Starting Speech-to-Text conversion...
+[PROGRESS] Transcribing audio file: /home/ubuntu/audio_segments/segment_000.mp3, file size: 9.16 MB
+[PROGRESS] Transcription may take some time depending on file size and audio length...
+[PROGRESS] Transcription completed successfully!
+
+TRANSCRIPTION RESULT:
+Total Duration: 600.0 seconds
+Language: english
+Timestamped segments:
+[00:000.0 - 00:005.0] Hey, what's going on no no no no we're here. We're live on the patreon, bro
+[00:005.0 - 00:008.8] I didn't start what we did cuz I was about to fight them there. Yeah, we need to cool
+[00:008.8 - 00:013.9] Are you guys on that you guys should back? I did I did I literally backed it up. I was like you back me up on this
+[00:018.1 - 00:021.4] No, I'd literally said I was like I I'm dealing with similar thing there
+[00:022.8 - 00:026.0] It's just easier to go yeah, you're probably right yeah, of course easier
+[00:026.8 - 00:029.4] We were driving in the car. I want to listen to music and
+[00:030.4 - 00:036.3] He was talking about how it Donald Trump is racist, so I just said yeah, maybe you know hand him the fucking mic
+[00:038.9 - 00:040.8] Now you liked Obama's
+[00:040.8 - 00:046.6] Obama's deportation record you don't want Trump to come close to the record that he said he's trying to get the record
+[00:046.8 - 00:048.8] He's trying to get the record right now
+[00:049.2 - 00:055.2] And people seem to somehow forget Obama set the record, baby. Yeah, I didn't know that that's kind of crazy Obama
+[00:055.2 - 01:000.6] What's also he literally said he's like I'm going to do this and now he's doing that's what everyone voted for yeah
+[01:000.6 - 01:002.9] We should probably fix that so it's like you know
+[01:003.8 - 01:007.6] My heart bleeds if there's there's lads close to me if I heard they got kicked out. I'd like damn
+[01:007.6 - 01:014.6] I I think they my bro, but I don't think it's as they've been clear that they're not there. They're starting from the
+[01:015.4 - 01:022.0] Starting at the top they get the guys that the bad guys bad hombres the hombres that have done bad and hombres bad Canucks
+[01:022.0 - 01:027.6] You know hold the whole fucking mixed bag. You should get some bad Canucks. I wouldn't mind. It was nice during that Vietnam thing
+[01:028.2 - 01:032.0] About 30,000 Americans went to Canada to yeah dodge it
+[01:032.7 - 01:039.3] 30,000 Canadians volunteered whoa yeah for real knocks were ready to fight damn. They want a piece of the Viet Cong
+[01:039.4 - 01:045.1] Holy shit, that's kind of crazy. It's a good on the Canucks. That's mad. It's been up and cannot again
+[01:045.1 - 01:047.0] I cannot get up in Canada
+[01:047.5 - 01:053.6] Nothing in Canada, I'm just being like fuck it. I'm gonna go Vietnam just slam the
+[01:054.5 - 01:056.5] Vietnam
+[01:057.1 - 01:059.1] But yeah, I've been hit with similar
+[01:059.6 - 02:004.0] Concerns like Brittany's it should like did you hear about this and I like she's not like really spazzing about it
+[02:004.0 - 02:007.8] But she'll get a thing on her phone. I'm like just Google one article man. Yeah, I
+[02:008.8 - 02:013.9] Guarantee yeah, it's not what it says it is and she's like oh, yeah fuck. I'm like dude everything
+[02:013.9 - 02:015.9] I read if it's like crazy. It's carding a guarantee
+[02:016.0 - 02:020.4] It's a GG didn't they just release like was it the Twitter files where it was like this is state-sponsored
+[02:021.0 - 02:024.4] No one cares probably. I think the Twitter files were just saying
+[02:025.4 - 02:031.5] The Biden administration was like don't don't let people share this type of information. Oh, yeah, they would decide what was being shared
+[02:031.5 - 02:033.7] Yeah, it's like that should be a huge issue
+[02:033.7 - 02:038.5] I know it's not but everyone knew they were doing it like they were literally but if you like said anything about Kovac
+[02:038.5 - 02:040.7] They were like they were freezing your fucking whole account
+[02:040.7 - 02:044.8] they were like openly doing it too, and then probably yeah, just like steering it, but now it's like I
+[02:046.1 - 02:051.0] Think I think Elon's for sure unleashed the floodgates if like anything the Biden's are trying to hold back
+[02:051.0 - 02:054.0] I think Elon has pushed the gas pedal. Yes, it's X's
+[02:055.4 - 02:056.7] X's
+[02:056.7 - 03:001.2] Almost unusable pop. I don't get on there dude. I thought of a new I'm a blue ski, man
+[03:001.2 - 03:007.5] I want to go on blue ski and just post fucking Pepe the frog take the Isis beheadings blue skis
+[03:008.3 - 03:012.8] Blue ski needs some beheading so I don't want fired up. Let's just get some Ukraine drone footage over to blue ski
+[03:015.0 - 03:019.3] Yeah, I do I thought of a new now that I'm all blockchain decentralized
+[03:019.3 - 03:025.2] I thought of a new blockchain podcast technology where it's like so you could do a thing where I could talk for like
+[03:025.6 - 03:028.7] Five minutes and be like okay, blah blah blah. Here's my idea
+[03:028.7 - 03:033.6] It's a blockchain podcast and then you listen to it and you talk for five minutes and you kick it down the blockchain
+[03:033.6 - 03:040.1] Somebody else now we put together the longest podcast ever yeah, and it's just it's completely disjointed ramblings of like 30 people
+[03:041.0 - 03:043.2] It's not bad. We're pretty sick. Yes
+[03:044.0 - 03:047.7] Podchain podchain technology yes, and then we release a coin
+[03:047.7 - 03:051.6] We'd have to get a coin ourselves, and we rugpull then we make 25 million dollars
+[03:051.6 - 03:055.1] We rugpull and then we rugpull dude, and then we take a nap like hock to it
+[03:056.9 - 03:058.9] I'm sleepy
+[03:059.5 - 04:001.5] Fuck I'm sleepy
+[04:004.3 - 04:006.9] That is actually the ultimate girl move in an argument
+[04:007.6 - 04:012.8] She's in trouble. I didn't sleep. Well. I'm tired. I'm done with this argument. I have to sleep for four days, okay
+[04:012.8 - 04:017.1] You know what I can't do this right now, and you're like yeah, you know yeah, I guess you were losing that argument
+[04:019.5 - 04:021.5] You rage quit the argument
+[04:021.7 - 04:027.1] Yeah, you know hibernate it's pretty hock to it dude obviously she had no fucking idea what that was yeah
+[04:027.1 - 04:031.3] I mean no offense to her. I know that sounds like I'm calling her a fucking dumbass, but that was her whole thing
+[04:031.3 - 04:038.9] It's like I'm a yes, like I'm a funny dumbass. Yeah, dumbasses were hot in the early 2000s Jessica Simpson, dude case in point
+[04:040.3 - 04:042.3] If you were a dumb
+[04:042.6 - 04:047.4] Still so hot bro for real being a dumbass was in dude amongst women now
+[04:047.4 - 04:050.2] They're like smart and strong before in the early 2000s
+[04:050.2 - 04:055.3] If you were a like very the ditzy or like literally the more money Pepsi would give you like wait
+[04:055.3 - 04:057.3] What is that and be like?
+[04:057.9 - 05:001.6] Fucking no turn on red laws you big you didn't oh, I never heard of that before
+[05:002.7 - 05:005.5] According to how he Mandela hawk to is 97%
+[05:009.8 - 05:013.7] I know it's so fucking funny. Yeah, Mandela was pumped on that
+[05:014.5 - 05:018.2] She went on a whole circuit. We're like old podcasters perved out on her
+[05:019.7 - 05:025.3] Yeah, they were they were horny for kid love who's kid love. That's the production company. Oh, yeah
+[05:027.9 - 05:033.2] That's so crazy you got to give them that hawk to it and spit on that I've been telling everyone your production company is called
+[05:033.2 - 05:035.2] kid love I
+[05:036.9 - 05:041.7] Was jesting with John Doe Collins Cincinnati, I was like yeah Shane's our production company. It's called kid love
+[05:044.1 - 05:047.5] But stuff spider butt stuff
+[05:048.3 - 05:054.5] Kid love is such a sick fucking news. It's like dude. Why dude. That's like the Nazi salute. It's like I I'm not saying you're bad
+[05:054.5 - 05:059.5] I'm not saying like why dude. Why did you do that just explain that to me kid love?
+[06:000.4 - 06:005.6] That's crazy. Yeah, I could be wrong, but I almost I know it is positive. It's kid love it is
+[06:005.6 - 06:012.0] It's something like that to that. Yeah, maybe he loves boy. Come on boy. Come come boy town
+[06:014.1 - 06:016.1] Kid love for sure
+[06:016.7 - 06:022.4] Kid love production r.i.p. Come down to dude your Nick Bowen is not on a Adam Friedland podcast
+[06:022.4 - 06:027.0] Yeah, he told I was with him on Monday. Are you talking with him? Yeah, what's he off to? What's he doing?
+[06:027.0 - 06:031.5] I don't know. He's in LA. I don't know why that's sick. I forget why I had to fight fires, maybe
+[06:032.4 - 06:036.5] That'd be sick if he's became he'd be a sick, but I'm not fucking around if he was a firefighter
+[06:036.5 - 06:040.9] He'd be a sick firefighter. Yeah, I think he can do anything true. I believe in that man sure
+[06:040.9 - 06:042.9] I
+[06:042.9 - 06:047.3] Every time he talks to me. I'm like, yep, you're right. Yeah, I don't know anything. He's a smart dude
+[06:047.3 - 06:050.7] He is smart dude. I I was jesting about this in Cincinnati
+[06:050.7 - 06:055.7] I uh, I do want to tell you it was it was making me laugh. So I you know the ladies who
+[06:056.7 - 07:001.2] The only fans ladies who one had sex with a thousand men. The other one was like, hey, that was my idea
+[07:001.2 - 07:003.9] That was my idea. I've come to the conclusion that
+[07:004.6 - 07:010.7] They both thought of the idea on the grounds that they're both gigantic whores and that's what gigantic whores think about
+[07:011.7 - 07:016.3] I think so. It's like wait a second. There's a chance they're both
+[07:016.9 - 07:018.9] whores
+[07:019.5 - 07:025.3] And what would a whore do like how many guys can have sex with the one day thousand men in one day
+[07:025.9 - 07:029.7] It's so funny to be like you stole my idea. It's like dude. Yeah, that's
+[07:030.2 - 07:034.3] It's pretty easy idea. I hardly called an idea rather an insatiable urge, you know
+[07:034.3 - 07:037.1] One of them should do is a thousand and one true
+[07:038.1 - 07:043.9] Damn who would end the spider to be the one bro, but the spider crawl would be a stun bro
+[07:043.9 - 07:050.1] The spider dance is a thousand than one. Let the spider dance on the pussy in the end zone, bro. Yes, you'd spike it down
+[07:050.7 - 07:052.7] I'm with you next week
+[07:053.9 - 07:057.5] The bang bus guy offered us a chance to go. Yeah
+[07:058.6 - 08:000.6] to bang
+[08:000.6 - 08:002.6] The bus
+[08:016.9 - 08:018.9] You don't think you're gonna roll on the floor in the bag
+[08:020.3 - 08:022.3] Where you gonna what are you gonna do?
+[08:023.3 - 08:028.1] Just be a part of history, huh? And then you're gonna jack off to bang bus videos and go I was just there
+[08:028.5 - 08:032.1] I get in that bus. I'm gonna sock the driver and floor the pedal into a wall
+[08:033.3 - 08:035.3] It'll be like speed
+[08:035.3 - 08:037.3] Bang bus has to go 50 miles an hour
+[08:037.9 - 08:040.7] If this bus doesn't go over 50 miles an hour, I'm gonna come
+[08:043.0 - 08:045.3] Well, that's cool the bang bus guy reached out it is nice
+[08:045.9 - 08:049.9] Weakest link he knew the horniest member of the crew. He said I have a nice in
+[08:049.9 - 08:053.5] I know one of the guys who's desperately horny. I can reach out to the spider
+[08:053.9 - 08:058.2] What what's his like yeah, what's he trying to do he said he was just like a porn star
+[08:058.2 - 09:000.6] He's gonna be at the shows. Anyway, so what the fuck's he want?
+[09:000.6 - 09:002.9] What's what's he got to do with me saying he wants you to check out the bus
+[09:002.9 - 09:007.8] You gotta check out the bus. He knows he knows he's heard. He knows I'm off. You know addiction
+[09:007.9 - 09:010.1] Maybe he wants me to get him out smuggle him out of the life
+[09:010.6 - 09:013.4] Yeah, I drive the bus to Mexico and just get him out of there
+[09:013.4 - 09:018.1] He's probably caught up in the life to taking fucking dick pills getting his dick sucked all the time
+[09:019.0 - 09:021.0] annoying as hell
+[09:021.0 - 09:023.0] life sucks
+[09:023.5 - 09:027.7] He knows he's you know how to get hit and it's illegal to get hit in the car, isn't it technically?
+[09:027.7 - 09:030.0] I don't want to I don't want to you know snitch on the bus
+[09:030.8 - 09:032.9] Probably what's gonna do with the bus gonna do the bus?
+[09:033.5 - 09:036.9] Buses rockin. They don't know I you know that is a nice thing. I reached out
+[09:036.9 - 09:041.4] I am off the porn you know and I you know I have nothing against you know I take the pilgrimage I
+[09:042.3 - 09:045.5] Never want to do anything people are like oh come do this I go
+[09:045.7 - 09:051.6] Yeah, I'm definitely gonna sit in my hotel room and just fucking do stuff on my computer and work out and take a walk
+[09:051.6 - 09:057.1] That's all I do I get I get business done on my computer. Yeah, people like doing activities on the road nah, man
+[09:057.1 - 09:060.0] I like to walk I go for walks. I work out in the hotel gym
+Complete transcription result saved to: segment_000_transcription_20250906_124210.json
